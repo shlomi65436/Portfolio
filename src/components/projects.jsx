@@ -5,13 +5,17 @@ export default function projects(){
         {
             "img" :  Cards,
             "title" : "Memory Game",
-            "description" : "cards memory game using html, css, JS"
+            "description" : "cards memory game using html, css, JS",
+            "link" : 'https://github.com/shlomi65436/Memory_Game',
+            "prev" : 'https://xhalfon.github.io/Memory_Game/'
 
         },
         {
             "img" :  Royal,
             "title" : "Royal Jewlery Shop",
-            "description" : "E commeres project using html, css, JS, MongoDB, NodeJS"
+            "description" : "E commeres project using html, css, JS, MongoDB, NodeJS",
+            "link" : 'https://github.com/shlomi65436/Royal_Project',
+            "prev" : 'https://royal-project.onrender.com/'
 
         }
     ];
@@ -25,10 +29,10 @@ export default function projects(){
                         <img className="img-proj" src={item.img} alt="proj-img" />
                         <p className="title-proj">{item.title}</p>
                         <p className="description-proj">{item.description}</p>
-                        <span>
-                        <button className="btn btn-glow btn-gradient btn-proj">Live preview</button>
-                        <button className="btn btn-proj">Check on github</button>
-                        </span>
+                        <div className="btncont">
+                        <button className="btn btn-glow btn-gradient btn-proj"><a className="aLive" href={item.prev} target="_blank">Live Preview</a></button>
+                        <button className = "btn btn-proj"><a className="aGit" target = "_blank" href={item.link}>Check on GitHub</a></button>
+                        </div>
                     </span>
                 )
             })}
