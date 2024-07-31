@@ -1,11 +1,10 @@
 import Navbar from "../navbar";
 import Hello from "../Hello";
-import Projects from "../projects";
 import Footer from "../Footer";
+import Arrow from "../Arrow";
+import Projects from "../projects";
 import Skills from "../Skills";
 import About from "../About";
-import Arrow from "../Arrow";
-
 export default function home(){
     return(
         <div>
