@@ -4,13 +4,16 @@ import Linkedin from "../assets/linkedin";
 import { Link, animateScroll as scroll } from 'react-scroll';
 import { useState } from "react";
 export default function Navbar(){
+    const [close,setClose] = useState(true);
     const [isopen,setOpen] = useState('nav-links-close');
     function handleNav(){
         if(isopen === 'nav-links-close'){
             setOpen("nav-links-close nav-links-open");
+            setClose(!close);
         }
         else{
             setOpen('nav-links-close');
+            setClose(!close);
         }
     }
     return(
@@ -35,7 +38,9 @@ export default function Navbar(){
         </div>
         <div className="navbar-phone">
             <img className="logo" src={img} alt="LOGO" />
-            <span onClick={handleNav} className="open-nav"><i class="fa-solid fa-bars"></i></span>
+                <span onClick={handleNav} className="open-nav">
+                    {close ? <i class="fa-solid fa-bars"></i> : <i class="fa-solid fa-xmark"></i>}
+                </span>
         </div>
         <center>
         <div className={isopen}>

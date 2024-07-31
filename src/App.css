@@ -111,6 +111,7 @@ li a{
   border-radius: 5%;
   padding: 1%;
   transition: 0.2s linear;
+  min-height: 50vh;
 }
 .img-proj{
   padding: 0%;
@@ -337,18 +338,40 @@ li a{
   }
   .btn {
     font-size: 12px;
-    padding: 5px 0px;
+    padding: 5px 5px;
+    margin: 2px 2px 2px 2px;
   }
   .container-proj{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 100px 165px 0px 150px;
+    margin: 100px 110px 0px 120px;
   }
   .moving-fin{
     display: none;
   }
   .email{
     display: none;
+  }
+  .head{
+    margin-top: 100px;
+  }
+  .btn-proj{
+    margin: 1rem;
+  }
+  .btncont{
+    display: block;
+  }
+  .img-proj{
+    width: 150px;
+  }
+  .border-proj{
+    flex-basis: 0%;
+    margin: 1% 10% 1% 10%;
+    border: 4px solid rgb(78, 78, 208);
+    text-align: center;
+    border-radius: 5%;
+    padding: 1%;
+    transition: 0.2s linear;
   }
 }
