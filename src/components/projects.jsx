@@ -1,5 +1,6 @@
 import Cards from "../assets/images/Cards.png";
 import Royal from "../assets/images/Royal.png";
+import Ecom from "../assets/images/ecom.png";
 export default function projects(){
     var proj = [
         {
@@ -11,9 +12,16 @@ export default function projects(){
 
         },
         {
+            "img": Ecom,
+            "title" : "E-commerce",
+            "description": "E-commerce project using MERN Stack",
+            "link": 'https://github.com/shlomi65436/proShop',
+            "prev": 'https://proshop-ppv0.onrender.com/'
+        },
+        {
             "img" :  Royal,
             "title" : "Royal Jewlery Shop",
-            "description" : "E commeres project using html, css, JS, MongoDB, NodeJS",
+            "description" : "Team project using html, css, JS, MongoDB, NodeJS",
             "link" : 'https://github.com/shlomi65436/Royal_Project',
             "prev" : 'https://royal-project.onrender.com/'
 
