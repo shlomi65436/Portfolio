@@ -38,8 +38,8 @@ export default function projects(){
                         <p className="title-proj">{item.title}</p>
                         <p className="description-proj">{item.description}</p>
                         <div className="btncont">
-                        <button className="btn btn-glow btn-gradient btn-proj"><a className="aLive" href={item.prev} target="_blank">Live Preview</a></button>
-                        <button className = "btn btn-proj"><a className="aGit" target = "_blank" href={item.link}>Check on GitHub</a></button>
+                        <button className="btn btn-glow btn-gradient btn-proj"><a className="aLive" href={item.prev} target="_blank" rel="noopener noreferrer">Live Preview</a></button>
+                        <button className = "btn btn-proj"><a className="aGit" target = "_blank" rel="noopener noreferrer" href={item.link}>Check on GitHub</a></button>
                         </div>
                     </span>
                 )

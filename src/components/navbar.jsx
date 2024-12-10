@@ -1,7 +1,7 @@
 import img from "../assets/images/shlomibar.png";
 import Git from "../assets/github";
 import Linkedin from "../assets/linkedin";
-import { Link, animateScroll as scroll } from 'react-scroll';
+import { Link } from 'react-scroll';
 import { useState } from "react";
 export default function Navbar(){
     const [close,setClose] = useState(true);

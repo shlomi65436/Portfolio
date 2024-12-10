@@ -1,17 +1,8 @@
 import { useState, useEffect } from 'react';
-import arrowUp from "../assets/images/arrow.png"; // Replace with your arrow-up icon path
+import arrowUp from "../assets/images/arrow.png"; 
 
 export default function Arrow() {
-  // State to manage visibility of the scroll-to-top button
   const [visible, setVisible] = useState(false);
-
-  const checkScrollTop = () => {
-    if (!visible && window.pageYOffset > 300) {
-      setVisible(true);
-    } else if (visible && window.pageYOffset <= 300) {
-      setVisible(false);
-    }
-  };
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -21,6 +12,14 @@ export default function Arrow() {
   };
 
   useEffect(() => {
+    const checkScrollTop = () => {
+      if (!visible && window.pageYOffset > 300) {
+        setVisible(true);
+      } else if (visible && window.pageYOffset <= 300) {
+        setVisible(false);
+      }
+    };
+
     window.addEventListener('scroll', checkScrollTop);
     return () => window.removeEventListener('scroll', checkScrollTop);
   }, [visible]);
@@ -29,7 +28,6 @@ export default function Arrow() {
     <div>
       <div className="cont">
         <div className="container-skill">
-          {/* Add your other images here */}
         </div>
       </div>
       {visible && (
