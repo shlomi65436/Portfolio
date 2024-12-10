@@ -1,5 +1,5 @@
 import img from "../assets/images/coolPic.png";
-import cv from "../assets/pdfs/CV.pdf";
+import cv from '../assets/pdfs/CV.pdf';
 export default function Hello(){
     return(
         <div className="Hello">
