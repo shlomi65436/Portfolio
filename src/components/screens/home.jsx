@@ -5,7 +5,7 @@ import Arrow from "../Arrow";
 import Projects from "../Projects";
 import Skills from "../Skills";
 import About from "../About";
-export default function home(){
+export default function Home(){
     return(
         <div>
         <Navbar/>
