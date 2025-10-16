@@ -10,7 +10,7 @@ ul{
   display: flex;
   justify-content:center;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
 }
 .navbar{
   background-color: transparent;
@@ -58,7 +58,8 @@ li a{
 
 .Hello{
   display: flex;
-  gap: 70px;
+  margin-top: -75px;
+  gap: 100px;
   justify-content: center;
   align-items: center;
 }
