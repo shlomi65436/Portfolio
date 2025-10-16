@@ -28,20 +28,26 @@ li a{
   text-decoration: none;
   font-size: 18px;
 }
-.icons{
+.icons {
   color: black;
   cursor: pointer;
   background-color: white;
   display: inline-flex;
-  justify-items: center;
   justify-content: center;
+  align-items: center;
   margin: 15px;
   border-radius: 50%;
   padding: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
-.white-icon{
-  width: 70px;
+
+.icons:hover {
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  background-color: #0b0a08;
+  color: white; 
 }
+
 @keyframes logoAnimate {
   0%{
     transform: translateY(-4px);

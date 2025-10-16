@@ -12,23 +12,31 @@ import python from "../assets/images/python.png"
 import linux from "../assets/images/linux.png"
 import react from "../assets/images/react.png"
 import node from "../assets/images/node.png"
+import docker from "../assets/images/docker.png"
+import terraform from "../assets/images/terraform.png"
+import aws from "../assets/images/aws.png"
+import azure from "../assets/images/azure.png"
 
 export default function Skills(){
     const imgs = [
         { name: "C Program", img: cProg },
         { name: "C++", img: cPlus },
-        { name: "Git", img: git },
-        { name: "GitHub", img: github },
         { name: "Java", img: java },
+        { name: "Python", img: python },
         { name: "JavaScript", img: js },
         { name: "HTML", img: html },
         { name: "CSS", img: css },
-        { name: "Linux", img: linux },
-        { name: "MongoDB", img: mongo },
         { name: "React", img: react },
         { name: "Node.js", img: node },
-        { name: "Python", img: python },
-        { name: "SQL", img: sql }
+        { name: "SQL", img: sql },
+        { name: "MongoDB", img: mongo },
+        { name: "Git", img: git },
+        { name: "GitHub", img: github },
+        { name: "Linux", img: linux },
+        { name: "AWS", img: aws },
+        { name: "Azure", img: azure },
+        { name: "Docker", img: docker },
+        { name: "Terraform", img: terraform },
     ];
 
     return(
