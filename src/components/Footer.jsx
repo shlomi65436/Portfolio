@@ -12,8 +12,6 @@ export default function Footer(){
                     <Linkedin />
                     <Git />
                 </span>
-
-
             </span>
         </div>
     );

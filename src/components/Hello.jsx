@@ -10,15 +10,8 @@ export default function Hello(){
                 <a className="btn-glow btn btn-gradient" href={cv} download="CV.pdf">Download CV</a>
             </span>
             <span className="rightSec">
-
             <img src={img} alt="CoolPic" width="300px" />
-
-
             </span>
-        
-        
-        
-        
         </div>
     );
 }

@@ -71,7 +71,7 @@ li a{
 .leftSec .Shlomi{ 
   display: inline;
   background: -webkit-radial-gradient(rgb(105, 227, 105),rgb(27, 27, 180));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .Student{
@@ -96,31 +96,35 @@ li a{
   border-radius: 50px;
 }
 /*Projct*/
-.container-proj{
+.container-proj {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin-top: 150px;
-  gap: 0%;
+  gap: 40px;
+  margin-top: 100px;
+  padding: 0 40px;
 }
-.border-proj{
-  flex-basis: 30%;
-  margin: 1% 5% 1% 5%;
-  border: 4px solid rgb(78, 78, 208);
+
+.border-proj {
+  flex: 0 0 320px;
+  border-radius: 15px;
+  padding: 20px;
   text-align: center;
-  border-radius: 5%;
-  padding: 1%;
-  transition: 0.2s linear;
-  min-height: 50vh;
+  background-color: rgba(0,0,0,0.6);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .img-proj{
-  padding: 0%;
   width: 100%;
-  height: 5%;
-  margin-right: 0%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 .btn-proj{
-  padding: 9px ;
+  padding: 9px;
+  cursor: pointer;
 }
 .footer{
   display: flex;
@@ -131,7 +135,7 @@ li a{
 }
 .Feel{
   background: -webkit-radial-gradient(rgb(105, 227, 105),rgb(27, 27, 180));
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: larger;
 }
@@ -140,33 +144,64 @@ li a{
   gap: 20%;
   cursor: pointer;
 }
-.container-skill{
+.container-skill {
   display: flex;
-  justify-content: space-between;
-  width: 70%;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto 100px auto;
 }
+
 .cont{
   display: flex;
   justify-content: center;
 }
-.border-skill{
+.border-skill {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  margin: 5px;
-  border: 1px solid rgb(97, 168, 155);
-  border-radius: 5px;
-  padding: 10px 15px 10px 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  background-color: rgba(0,0,0,0.3);
 }
-.img-skill{
+
+.border-skill:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+.img-skill {
   width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
 }
-.head{
+
+.head {
   text-align: center;
-  margin : 10%;
+  margin: 150px 0 40px 0;
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #e0e0e0;
+  text-transform: uppercase;
+  position: relative;
 }
+
+.head::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
 .wave {
   display: inline-block;
   animation: wave-animation 2s infinite;
@@ -329,7 +364,7 @@ li a{
   .leftSec .Shlomi{ 
     display: inline;
     background: -webkit-radial-gradient(rgb(105, 227, 105),rgb(27, 27, 180));
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .rightSec img{

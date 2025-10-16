@@ -14,77 +14,34 @@ import react from "../assets/images/react.png"
 import node from "../assets/images/node.png"
 
 export default function Skills(){
-    var imgs = [
-        {
-            "name" : "cProg",
-            "img" : cProg
-        },
-        {
-            "name" : "c++",
-            "img" : cPlus
-        },
-        {
-            "name" : "git",
-            "img" : git
-        },
-        {
-            "name" : "github",
-            "img" : github
-        },
-        {
-            "name" : "java",
-            "img" : java
-        },
-        {
-            "name" : "js",
-            "img" : js
-        },
-        {
-            "name" : "html",
-            "img" : html
-        },
-        {
-            "name" : "css",
-            "img" : css
-        },
-        {
-            "name" : "linux",
-            "img" : linux
-        },
-        {
-            "name" : "mongo",
-            "img" : mongo
-        },
-        {
-            "name" : "react",
-            "img" : react
-        },
-        {
-            "name" : "node",
-            "img" : node
-        },
-        {
-            "name" : "python",
-            "img" : python
-        },
-        {
-            "name" : "sql",
-            "img" : sql
-        }
+    const imgs = [
+        { name: "C Program", img: cProg },
+        { name: "C++", img: cPlus },
+        { name: "Git", img: git },
+        { name: "GitHub", img: github },
+        { name: "Java", img: java },
+        { name: "JavaScript", img: js },
+        { name: "HTML", img: html },
+        { name: "CSS", img: css },
+        { name: "Linux", img: linux },
+        { name: "MongoDB", img: mongo },
+        { name: "React", img: react },
+        { name: "Node.js", img: node },
+        { name: "Python", img: python },
+        { name: "SQL", img: sql }
     ];
+
     return(
-        <div id="2"> <h1 className="head">Skills and Technologies</h1>
-        <div className="cont">
-        <div className="container-skill">
-            {imgs.map( (item) => {
-                return (
-                    <div className="border-skill">
+        <div id="2">
+            <h1 className="head">Skills and Technologies</h1>
+            <div className="container-skill">
+                {imgs.map((item, idx) => (
+                    <div key={idx} className="border-skill">
                         <img className="img-skill" src={item.img} alt={item.name} />
+                        <p className="skill-name">{item.name}</p>
                     </div>
-                );
-            })}
-        </div>
-        </div>
+                ))}
+            </div>
         </div>
     );
 }
